@@ -1,7 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/ProfilePage";
+import WhatIDo from "@/components/WhatIDo";
 import Contact from "@/components/Contact";
+import StatsSection from "@/components/StatsSection";
 import { Metadata } from "next";
 
 // Metadata export replaces Head in app router
@@ -18,6 +20,8 @@ export default function HomePage() {
       <main>
         <Hero />
         <About />
+        <WhatIDo />
+        <StatsSection />
         <Contact />
       </main>
     </>

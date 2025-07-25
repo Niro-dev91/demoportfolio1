@@ -18,7 +18,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative w-full h-screen flex items-center justify-center bg-primary text-white bg-cover bg-center"
+            className="relative w-full h-[85vh] flex items-center justify-center bg-primary text-white bg-cover bg-center"
             style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
         >
             {/* Star animation overlay */}
@@ -31,12 +31,13 @@ const Hero = () => {
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="relative z-20 p-6 w-3/4 mx-auto text-left"
+                className="relative z-20 p-6 w-full max-w-4xl mx-auto text-left ml-12"
+
             >
-                <p className="text-lg mt-4">Hi, I Am Mary Elizabeth</p>
+                <p className="text-lg mt-4 ml-8">Hi, I Am Mary Elizabeth</p>
 
                 {/* TypeAnimation */}
-                <div className="text-lg mt-10 mb-2">
+                <div className="text-lg mt-10 mb-2 ml-8">
                     {isClient && (
                         <TypeAnimation
                             sequence={[
@@ -57,11 +58,11 @@ const Hero = () => {
                     )}
                 </div>
 
-                <p className="text-lg mt-4">Crafting clean and interactive UIs</p>
+                <p className="text-lg mt-4 ml-8">Crafting clean and interactive UIs</p>
                 <br />
                 <div className="w-3/4 mt-6">
                     {/* Labels row */}
-                    <div className="grid grid-cols-4 text-gray-300 font-semibold text-sm mb-1">
+                    <div className="grid grid-cols-4 text-gray-300 font-semibold text-sm mb-1 ml-8">
                         <div>Email</div>
                         <div>Phone</div>
                         <div>Address</div>
@@ -69,7 +70,7 @@ const Hero = () => {
                     </div>
 
                     {/* Values row */}
-                    <div className="grid grid-cols-4 text-white text-sm">
+                    <div className="grid grid-cols-4 text-white text-sm ml-8">
                         <div>info@example.com</div>
                         <div>+456 789 321</div>
                         <div>New Winchester</div>
